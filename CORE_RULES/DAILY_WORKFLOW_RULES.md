@@ -11,7 +11,7 @@
 1. 识别当前设备，并确认 AI Software Studio 的绝对路径。
 2. 若工作室不存在，从工作室配置的 GitHub 仓库自动 clone；若工作室已存在，检查 `remote` 是否指向配置仓库并执行 `git pull --ff-only`。
 3. 检查工作室当前分支、上游分支、最新 commit 和 Git 状态；发现未知改动、分支异常或远端不一致时，先诊断再继续。
-4. 运行 `SCRIPTS/STUDIO_SELF_CHECK.ps1`，确认工作室结构、入口、注册表和业务代码隔离符合规范。
+4. 使用 Python 3 运行 `SCRIPTS/studio_self_check.py`，确认工作室结构、入口、注册表和业务代码隔离符合规范。
 5. 读取 `PROJECTS/PROJECT_REGISTRY.md`，取得受管项目元数据。
 6. 确认用户指定业务项目的实际绝对路径；不得以猜测路径代替检查。
 7. 检查该项目的 Git 状态、当前分支与最新 commit、运行实例、环境依赖和昨日进度记录。

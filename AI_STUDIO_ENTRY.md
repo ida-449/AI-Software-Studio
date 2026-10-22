@@ -11,7 +11,7 @@ AI 必须自动读取并遵循：
 3. `TEMPLATES/` 中适用的模板。
 4. `PROJECTS/PROJECT_REGISTRY.md` 中的项目注册信息。
 5. `KNOWLEDGE_BASE/` 中与当前项目、技术栈和问题直接相关的知识；不为占满上下文读取无关资料。
-6. 运行 `SCRIPTS/STUDIO_SELF_CHECK.ps1`；如发现业务目录进入工作室、入口缺失或注册表异常，先停止扩大操作并报告。
+6. 使用 Python 3 运行 `SCRIPTS/studio_self_check.py`；如发现业务目录进入工作室、入口缺失或注册表异常，先停止扩大操作并报告。
 7. 开发、测试和发布任务必须加载 `CORE_RULES/QUALITY_GATE_RULES.md` 与 `CORE_RULES/ROLE_HANDOFF_RULES.md`。
 
 ## 场景判断与流程选择

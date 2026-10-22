@@ -1,0 +1,6 @@
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+
+# Local quality-gate output when a project chooses an in-repo ignored directory
+.ai/quality-gate-reports/

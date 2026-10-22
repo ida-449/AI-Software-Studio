@@ -8,6 +8,8 @@
 
 每个外部业务项目应在项目内维护 `.ai/quality-gate.json`，格式参考 `TEMPLATES/PROJECT_QUALITY_GATE.example.json`。配置由 AI 根据项目真实技术栈建立，不要求用户填写命令。
 
+工作室统一通过 Python 3 标准库脚本 `SCRIPTS/invoke_project_quality_gate.py` 执行门禁。脚本不依赖特定操作系统的脚本运行时，也不需要第三方 Python 包，可在 Windows、macOS 和 Linux 使用同一配置。
+
 检查按以下标准阶段排序：
 
 1. `format`：格式检查，不在门禁中自动改写文件。
