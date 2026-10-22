@@ -14,6 +14,7 @@ AI 必须自动读取并遵循：
 6. 使用 Python 3 运行 `SCRIPTS/studio_self_check.py`；如发现业务目录进入工作室、入口缺失或注册表异常，先停止扩大操作并报告。
 7. 开发、测试和发布任务必须加载 `CORE_RULES/QUALITY_GATE_RULES.md` 与 `CORE_RULES/ROLE_HANDOFF_RULES.md`。
 8. 产品允许多个访问者使用或保存独立数据时，必须加载 `CORE_RULES/MULTI_USER_PRODUCT_RULES.md`，优先验证打开即用的核心体验，并把身份识别、服务端授权、数据隔离和恢复验证列为发布门禁。
+9. App、网站或其他面向用户的产品必须加载 `CORE_RULES/PUBLIC_PRODUCT_RULES.md`；除非明确是单机或内网工具，本地地址只算开发验证，最终目标是提供经过验证的公网 HTTPS 体验。
 
 ## 场景判断与流程选择
 
