@@ -7,7 +7,19 @@ $errors = [System.Collections.Generic.List[string]]::new()
 $warnings = [System.Collections.Generic.List[string]]::new()
 $projectHeadings = @()
 
-$requiredFiles = @('AGENTS.md', 'AI_STUDIO_ENTRY.md', 'PROJECT_STATUS.md', 'PROJECTS\PROJECT_REGISTRY.md')
+$requiredFiles = @(
+    'AGENTS.md',
+    'AI_STUDIO_ENTRY.md',
+    'PROJECT_STATUS.md',
+    'PROJECTS\PROJECT_REGISTRY.md',
+    'CORE_RULES\QUALITY_GATE_RULES.md',
+    'CORE_RULES\ROLE_HANDOFF_RULES.md',
+    'CORE_RULES\THIRD_PARTY_REFERENCE_RULES.md',
+    'SCRIPTS\INVOKE_PROJECT_QUALITY_GATE.ps1',
+    'SCRIPTS\TEST_PROJECT_QUALITY_GATE.ps1',
+    'TEMPLATES\PROJECT_QUALITY_GATE.example.json',
+    'TEMPLATES\ROLE_HANDOFF_TEMPLATE.md'
+)
 $requiredDirectories = @('CORE_RULES', 'KNOWLEDGE_BASE', 'PROJECTS', 'ROLES', 'SCRIPTS', 'TEMPLATES')
 
 foreach ($relativePath in $requiredFiles) {

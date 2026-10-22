@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "checks": [
+    {
+      "name": "lint",
+      "profiles": ["quick", "full"],
+      "command": "",
+      "required": false,
+      "notApplicableReason": "Replace with the project's real lint command or explain why lint is not applicable.",
+      "timeoutSeconds": 600
+    },
+    {
+      "name": "typecheck",
+      "profiles": ["quick", "full"],
+      "command": "",
+      "required": false,
+      "notApplicableReason": "Replace with the project's real type-check command or explain why it is not applicable.",
+      "timeoutSeconds": 600
+    },
+    {
+      "name": "test-related",
+      "profiles": ["quick", "full"],
+      "command": "",
+      "required": false,
+      "notApplicableReason": "Configure tests related to the current change.",
+      "timeoutSeconds": 900
+    },
+    {
+      "name": "test-full",
+      "profiles": ["full"],
+      "command": "",
+      "required": false,
+      "notApplicableReason": "Configure the complete automated test suite.",
+      "timeoutSeconds": 1800
+    },
+    {
+      "name": "build",
+      "profiles": ["quick", "full"],
+      "command": "",
+      "required": false,
+      "notApplicableReason": "Configure a production-equivalent build or explain why none exists.",
+      "timeoutSeconds": 1200
+    },
+    {
+      "name": "smoke",
+      "profiles": ["full"],
+      "command": "",
+      "required": false,
+      "notApplicableReason": "Configure a safe local startup and smoke check; never perform a real external submission.",
+      "timeoutSeconds": 600
+    }
+  ]
+}
