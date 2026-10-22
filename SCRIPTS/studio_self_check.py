@@ -19,6 +19,7 @@ REQUIRED_FILES = (
     "CORE_RULES/QUALITY_GATE_RULES.md",
     "CORE_RULES/ROLE_HANDOFF_RULES.md",
     "CORE_RULES/THIRD_PARTY_REFERENCE_RULES.md",
+    "CORE_RULES/MULTI_USER_PRODUCT_RULES.md",
     "SCRIPTS/invoke_project_quality_gate.py",
     "SCRIPTS/test_project_quality_gate.py",
     "TEMPLATES/PROJECT_QUALITY_GATE.example.json",
